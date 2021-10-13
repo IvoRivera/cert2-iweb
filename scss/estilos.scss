@@ -1,0 +1,62 @@
+$tamanyo: 12px;
+$color-fondo-tag: lightgray;
+$color-hover-after: red;
+$color-hover: white;
+$color-fondo-input: darkblue;
+$color-borde-tags: lightgray;
+
+body{
+    font-size: $tamanyo;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tags-input {
+    border: 1px solid $color-borde-tags;
+    display: inline-block;
+}
+
+.tags-input .tag {
+    font-size: 85%;
+    padding: 0.5em 0.75em;
+    margin: 0.25em 0.1em;
+    display: inline-block;
+    background-color: $color-fondo-tag;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.tags-input .tag:hover {
+    background-color: $color-fondo-input;
+    color: $color-hover;
+}
+
+.tags-input .tag .close::after {
+    content: '×';
+    font-weight: bold;
+    display: inline-block;
+    transform: scale(1.4);
+    margin-left: 0.75em;
+}
+
+.tags-input .tag .close:hover::after {
+    color: $color-hover-after;
+}
+
+.tags-input .main-input {
+    border: 0;
+    outline: 0;
+    padding: 0.5em 0.1em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#mensaje{
+    color:red;
+    display: none;
+    text-align: center;
+}

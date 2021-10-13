@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body {
+  font-size: 12px;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tags-input {
+  border: 1px solid lightgray;
+  display: inline-block;
+}
+
+.tags-input .tag {
+  font-size: 85%;
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0.1em;
+  display: inline-block;
+  background-color: lightgray;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.tags-input .tag:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.tags-input .tag .close::after {
+  content: '×';
+  font-weight: bold;
+  display: inline-block;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  margin-left: 0.75em;
+}
+
+.tags-input .tag .close:hover::after {
+  color: red;
+}
+
+.tags-input .main-input {
+  border: 0;
+  outline: 0;
+  padding: 0.5em 0.1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mensaje {
+  color: red;
+  display: none;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
